@@ -1,0 +1,29 @@
+{
+  "name": "cm3141-coursework",
+  "version": "1.0.0",
+  "description": "TradeCo",
+  "homepage": "https://github.com/zencrab/cm3141-coursework#readme",
+  "bugs": {
+    "url": "https://github.com/zencrab/cm3141-coursework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zencrab/cm3141-coursework.git"
+  },
+  "license": "ISC",
+  "author": "Adam Bisinella, Grant Laird",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.15.0"
+  }
+}
