@@ -50,14 +50,14 @@ body {
   height: 20px;
 }
 
-.cta {
+/* .cta {
   background-color: #ffc400;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
-}
+} */
 
 .hero {
   padding: 100px 20px 50px;
@@ -365,9 +365,9 @@ body {
   border-radius: 5px;
 }
 
-/* .cta {
+/* .cta2 {
   display: block;
-  width: 100%;
+  width: 40px;
   padding: 10px;
   background-color: yellow;
   color: black;
@@ -419,3 +419,84 @@ body {
   .contact-form button:hover {
     background-color: #f0c000;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .account-creation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ensures the form is vertically centered */
+    padding: 20px;
+    text-align: center; /* Ensures proper alignment */
+  }
+  
+  .account-form {
+    width: 100%;
+    max-width: 500px; /* Limits the form's width */
+    background-color: #f9f9f9; /* Optional: Adds a light background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin: 0 auto; /* Ensures the form is horizontally centered */
+    text-align: left; /* Aligns form content to the left */
+  }
+/* .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+} */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* 
+.account-creation {
+    overflow: visible;
+    height: auto;
+  }
+   */
+  .account-form {
+    overflow: visible;
+    height: auto;
+  }
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Trades Account - TradeCo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="img/tradeco.png" alt="TradeCo Logo" />
+        <h1 class="big-title">TradeCo</h1>
+      </div>
+    </header>
+
+    <main class="account-creation">
+      <h2 class="form-title">Create Trades Account</h2>
+      <form class="account-form" action="submit_trades.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+        </div>
+        <div class="form-group">
+          <label for="trades-known">Trades Known: (ctrl for more than 1)</label>
+          <select id="trades-known" name="trades-known[]" multiple required>
+            <option value="joiner">Joiner</option>
+            <option value="electrician">Electrician</option>
+            <option value="plumber">Plumber</option>
+            <option value="handyman">Handyman</option>
+          </select>
+          <small>Hold Ctrl (Windows) or Command (Mac) to select multiple trades.</small>
+        </div>
+        <div class="form-group">
+          <label for="sortcode">Sort Code:</label>
+          <input type="text" id="sortcode" name="sortcode" placeholder="Enter your sort code (xx-xx-xx)" required />
+        </div>
+        <div class="form-group">
+          <label for="account-number">Account Number:</label>
+          <input type="text" id="account-number" name="account-number" placeholder="Enter your account number" required />
+        </div>
+        <div class="form-group">
+          <label for="license-passport">Picture of License or Passport:</label>
+          <input type="file" id="license-passport" name="license-passport" accept=".jpg,.jpeg,.png,.pdf" required />
+        </div>
+        <div class="form-group">
+          <label for="proof-of-address">Proof of Address:</label>
+          <input type="file" id="proof-of-address" name="proof-of-address" accept=".jpg,.jpeg,.png,.pdf" required />
+        </div>
+        <button type="submit" class="cta">Create Account</button>
+        <button type="button" class="cta" onclick="location.href='login.stage1.html'">Back</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Contact Us</h2>
+        <p>65 Market Street</p>
+        <p>Aberdeen</p>
+        <p>+44 7818904132</p>
+        <p>Tradesco@hotmail.co.uk</p>
+        <button class="cta" onclick="location.href='contactus.html'">GET IN TOUCH</button>
+      </div>
+    </footer>
+  </body>
+</html>

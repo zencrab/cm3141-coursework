@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Customer Account - TradeCo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="img/tradeco.png" alt="TradeCo Logo" />
+        <h1 class="big-title">TradeCo</h1>
+      </div>
+    </header>
+
+    <main class="account-creation">
+      <h2 class="form-title">Create Customer Account</h2>
+      <form class="account-form" action="submit_customer.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
+        </div>
+        <div class="form-group">
+          <label for="postcode">Postcode:</label>
+          <input type="text" id="postcode" name="postcode" placeholder="Enter your postcode" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="payment-option">Payment Option:</label>
+          <select id="payment-option" name="payment-option" required>
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+          </select>
+        </div>
+        <div class="form-group" id="card-details-group" style="display: none;">
+          <label for="card-details">Card Details:</label>
+          <input type="text" id="card-details" name="card-details" placeholder="(sort code, account number: xx-xx-xx xxxxxxx)" />
+        </div>
+        <button type="submit" class="cta">Create Account</button>
+        <button type="button" class="cta" onclick="location.href='login.stage1.html'">Back</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Contact Us</h2>
+        <p>65 Market Street</p>
+        <p>Aberdeen</p>
+        <p>+44 7818904132</p>
+        <p>Tradesco@hotmail.co.uk</p>
+        <button class="cta" onclick="location.href='contactus.html'">GET IN TOUCH</button>
+      </div>
+    </footer>
+
+    <script>
+      // Show/hide card details input based on payment option
+      const paymentOption = document.getElementById('payment-option');
+      const cardDetailsGroup = document.getElementById('card-details-group');
+
+      paymentOption.addEventListener('change', function () {
+        if (this.value === 'card') {
+          cardDetailsGroup.style.display = 'block';
+        } else {
+          cardDetailsGroup.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
