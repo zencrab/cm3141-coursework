@@ -50,14 +50,14 @@ body {
   height: 20px;
 }
 
-.cta {
+/* .cta {
   background-color: #ffc400;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
-}
+} */
 
 .hero {
   padding: 100px 20px 50px;
@@ -365,9 +365,9 @@ body {
   border-radius: 5px;
 }
 
-/* .cta {
+/* .cta2 {
   display: block;
-  width: 100%;
+  width: 40px;
   padding: 10px;
   background-color: yellow;
   color: black;
