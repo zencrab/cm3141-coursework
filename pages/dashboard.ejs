@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tradesmen Dashboard - TradeCo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="img/tradeco.png" alt="TradeCo Logo" />
+        <h1 class="big-title">TradeCo</h1>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <h2 class="welcome-message">Hello, <%= tradesmenName %>!</h2>
+
+      <!-- Profile Details Section -->
+      <section class="profile-details">
+        <div class="profile-card">
+          <h3>Profile Details</h3>
+          <p><strong>Trades Known:</strong> <%= tradesKnown.join(', ') %></p>
+          <p><strong>Previous Jobs:</strong> <%= previousJobs %></p>
+          <p><strong>Account Details:</strong> Sort Code: <%= sortCode %>, Account Number: <%= accountNumber %></p>
+        </div>
+      </section>
+
+      <!-- Jobs Available Section -->
+      <section class="jobs-available">
+        <h3>Jobs Available</h3>
+        <div class="job-cards">
+          <div class="job-card">
+            <h4>Job Title: Fix Wiring Issue</h4>
+            <p><strong>Location:</strong> 123 Main Street</p>
+            <p><strong>Description:</strong> Fix faulty wiring in a residential property.</p>
+            <p><strong>Budget:</strong> £200</p>
+          </div>
+          <div class="job-card">
+            <h4>Job Title: Install New Lighting</h4>
+            <p><strong>Location:</strong> 456 Elm Avenue</p>
+            <p><strong>Description:</strong> Install new LED lighting in a commercial office.</p>
+            <p><strong>Budget:</strong> £300</p>
+          </div>
+          <div class="job-card">
+            <h4>Job Title: Electrical Inspection</h4>
+            <p><strong>Location:</strong> 789 Oak Lane</p>
+            <p><strong>Description:</strong> Perform an electrical safety inspection for a rental property.</p>
+            <p><strong>Budget:</strong> £150</p>
+          </div>
+          <div class="job-card">
+            <h4>Job Title: Replace Circuit Breaker</h4>
+            <p><strong>Location:</strong> 101 Pine Road</p>
+            <p><strong>Description:</strong> Replace a faulty circuit breaker in a residential home.</p>
+            <p><strong>Budget:</strong> £250</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Contact Us</h2>
+        <p>65 Market Street</p>
+        <p>Aberdeen</p>
+        <p>+44 7818904132</p>
+        <p>Tradesco@hotmail.co.uk</p>
+        <button class="cta" onclick="location.href='contactus.html'">GET IN TOUCH</button>
+      </div>
+    </footer>
+  </body>
+</html>
