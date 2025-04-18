@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Customer Account - TradeCo</title>
+    <link rel="stylesheet" href="../../public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="../../public/img/tradeco.png" alt="TradeCo Logo" />
+        <h1 class="big-title">TradeCo</h1>
+      </div>
+    </header>
+
+    <main class="account-creation">
+      <h2 class="form-title">Create Customer Account</h2>
+            <form class="account-form" action="/register_client" method="POST" >
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" placeholder="Enter your surname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter the password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required />
+        </div>
+        <button type="submit" class="cta">Create Account</button>
+        <button type="button" class="cta" onclick="location.href='/enter'">Back</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Contact Us</h2>
+        <p>65 Market Street</p>
+        <p>Aberdeen</p>
+        <p>+44 7818904132</p>
+        <p>Tradesco@hotmail.co.uk</p>
+        <button class="cta" onclick="location.href='/contact_us'">GET IN TOUCH</button>
+      </div>
+    </footer>
+
+  </body>
+</html>

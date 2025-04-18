@@ -4,38 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Trades Account - TradeCo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../public/css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <img src="img/tradeco.png" alt="TradeCo Logo" />
+        <img src="../../public/img/tradeco.png" alt="TradeCo Logo" />
         <h1 class="big-title">TradeCo</h1>
       </div>
     </header>
 
     <main class="account-creation">
       <h2 class="form-title">Create Trades Account</h2>
-      <form class="account-form" action="submit_trades.php" method="POST" enctype="multipart/form-data">
+      <form class="account-form" action="/create_trademan" method="POST">
         <div class="form-group">
-          <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
+          <label for="name">First Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your first name" required />
         </div>
         <div class="form-group">
-          <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
+          <label for="surname">Last Name:</label>
+          <input type="text" id="surname" name="surname" placeholder="Enter your last name" required />
         </div>
+
+        <!-- Email -->
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required />
         </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Email:</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required />
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirm_password">Email:</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required />
+        </div>
+
         <div class="form-group">
           <label for="phone">Phone:</label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
-        </div>
+        </div>login.stage1.html
         <div class="form-group">
-          <label for="trades-known">Trades Known: (ctrl for more than 1)</label>
-          <select id="trades-known" name="trades-known[]" multiple required>
+          <label for="trade">Trades Known: (ctrl for more than 1)</label>
+          <select id="trade" name="trade" multiple required>
             <option value="joiner">Joiner</option>
             <option value="electrician">Electrician</option>
             <option value="plumber">Plumber</option>
@@ -48,19 +63,11 @@
           <input type="text" id="sortcode" name="sortcode" placeholder="Enter your sort code (xx-xx-xx)" required />
         </div>
         <div class="form-group">
-          <label for="account-number">Account Number:</label>
-          <input type="text" id="account-number" name="account-number" placeholder="Enter your account number" required />
-        </div>
-        <div class="form-group">
-          <label for="license-passport">Picture of License or Passport:</label>
-          <input type="file" id="license-passport" name="license-passport" accept=".jpg,.jpeg,.png,.pdf" required />
-        </div>
-        <div class="form-group">
-          <label for="proof-of-address">Proof of Address:</label>
-          <input type="file" id="proof-of-address" name="proof-of-address" accept=".jpg,.jpeg,.png,.pdf" required />
+          <label for="account">Account Number:</label>
+          <input type="text" id="account" name="account" placeholder="Enter your account number" required />
         </div>
         <button type="submit" class="cta">Create Account</button>
-        <button type="button" class="cta" onclick="location.href='login.stage1.html'">Back</button>
+        <button type="button" class="cta" onclick="location.href='/enter'">Back</button>
       </form>
     </main>
 
@@ -71,7 +78,7 @@
         <p>Aberdeen</p>
         <p>+44 7818904132</p>
         <p>Tradesco@hotmail.co.uk</p>
-        <button class="cta" onclick="location.href='contactus.html'">GET IN TOUCH</button>
+        <button class="cta" onclick="location.href='/contact_us'">GET IN TOUCH</button>
       </div>
     </footer>
   </body>
